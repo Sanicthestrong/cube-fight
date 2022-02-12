@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_warfare_spear_land_ground_002_43626.mp3-431a713887238b430f1dbff784de783c.mp3str"
+
+[deps]
+
+source_file="res://zapsplat_warfare_spear_land_ground_002_43626.mp3"
+dest_files=[ "res://.import/zapsplat_warfare_spear_land_ground_002_43626.mp3-431a713887238b430f1dbff784de783c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

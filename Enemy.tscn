@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://evil_cube_man.png" type="Texture" id=1]
+[ext_resource path="res://Enemy.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="Enemy" type="Sprite" groups=["Enemy"]]
+modulate = Color( 0.894118, 0.145098, 0.145098, 1 )
+position = Vector2( 0, -4.76837e-07 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="hitbox" type="Area2D" parent="." groups=["Enemy", "enemy"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox" groups=["Enemy"]]
+shape = SubResource( 1 )
+
+[node name="StunTimer" type="Timer" parent="."]
+wait_time = 0.075
+one_shot = true
+
+[connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
+[connection signal="timeout" from="StunTimer" to="." method="_on_StunTimer_timeout"]

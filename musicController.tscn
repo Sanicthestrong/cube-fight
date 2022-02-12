@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Music.gd" type="Script" id=1]
+[ext_resource path="res://zapsplat_warfare_spear_land_ground_002_43626.mp3" type="AudioStream" id=2]
+
+[node name="musicController" type="Node"]
+script = ExtResource( 1 )
+
+[node name="sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+pitch_scale = 0.75
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+
+[node name="MusicTimer" type="Timer" parent="."]
+wait_time = 138.0
+
+[connection signal="timeout" from="MusicTimer" to="." method="_on_MusicTimer_timeout"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ello.mp3-2d4b60a1ed9fc80ef1be02077a5b9a99.mp3str"
+
+[deps]
+
+source_file="res://ello.mp3"
+dest_files=[ "res://.import/ello.mp3-2d4b60a1ed9fc80ef1be02077a5b9a99.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
